@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/index.css" rel='stylesheet'>
+    <title>CSS Color Cheatsheet</title>
+</head>
+<body>
+   <header>
+        <h1>CSS Color Cheatsheet</h1>
+   </header> 
+   <main>
+        <p>This page will give a brief set of several color options for a CSS file</p>
+
+        <ul>
+            <li><a href="#color">color:</a></li>
+            <li><a href="#bgcolor">background-color:</a></li>
+            <li><a href="#keycolor">Keyword Color</a></li>
+            <li><a href="#rgbcolor">RGB Color</a></li>
+            <li><a href="#hexcolor">Hexadecimal Color</a></li>
+            <li><a href="#hsl">HSL Color</a></li>
+            <li><a href="#opac">Opacity</a></li>
+        </ul>
+        <dev id="color">
+            <h3 class="title">Color</h3>
+            <p>Syntax: color: black;</p>
+            <p>The color element directly affect the foreground color. In this example the text is displayed as black </p>
+        </dev>
+        <dev id="bgcolor">
+            <h3 class="title">Background Color</h3>
+            <p>Syntax: background-color: AntiqueWhite;</p>
+            <p>The color element directly affect the background color. The above example sets the background color to AntiqueWhite </p>
+        </dev>
+        <dev id="keycolor">
+            <h3 class="title">Keyword Colors</h3>
+            <p>Syntax: color: black; <br>Syntax: background-color: blue;</br></p>
+            <p>Keyword colors are just as described. The color is a specific keyword that can be typed into CSS. It is very limited though so use if for more general colors.</p>
+            <a href="https://147colors.com/">147colors.com</a>
+        </dev>
+        <dev id="rgbcolor">
+            <h3 class="title">RGB Color</h3>
+            <p>Syntax: color: rbg(0, 255, 123);</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="example" style="background-color:rgb(0, 255, 123)"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The RBG color element is "rbg(x, x, x)" where x is a numeric value from 0 to 255. The first number is the amount of red, the second is the amount of green, and the third is the amount of blue.</p>
+        </dev>
+        <de id="hexcolor">
+            <h3 class="title">Hexadecimal Colors</h3>
+            <p>Syntax: color: #FF00A0;</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="example" style="background-color:#FF00A0"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The hexadecimal color element is "#xxxxxx" were x is hexadecimal number from 0 to F. The format is either a 3 or 6 digit combination of hexidecimals characters. The first 2/1 characters are the amount of Red, the second 2/1 characters are the amount of green, and the last 2/1 characters are the amount of blue. 00/0 is white and FF/F is full color.</p>
+        </dev>
+        <dev id="hsl">
+            <h3 class="title">HSL Color</h3>
+            <p>Syntax: hsl(249, 70%, 65%);</p>
+            <p>The hsl color is "hsl(x, y, y)" element stands for hue, saturation & lightness. The hue or, x in the example, is a numberic number from 0 to 360 representing the angle on the color wheel (0/360 = Red, 120 = Green, 240 = Blue). The saturation, or the first y, is a % from 0 to 100%. The closer to 100 the more rich the color is and the closer to 0 the duller the color is with 50% being normal. The last digit is the lightness, or the second y, is a % of how light the color is. The closer to 100 the value is the whiter the color will be and the closer to 0 the closer to black the color will be. 50% is normal</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="example" style="background-color:hsl(249, 70%, 65%)"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </dev>
+        <dev id="opac">
+            <h3 class="title">Opacity</h3>
+            <p>Syntax: color: transparent;
+                <br>Syntax: color: rgba(0,0,0,.5);</br>
+                <br>Syntax: color: #0007; / color: #00000077;</br>
+                <br>Syntax: color: hsla(0, 100%, 0%, 0.5);</br>
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="example" style="background-color:rgba(0,0,0,.5)"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Opacity affects how transparent an element is. There are several ways that are outlined above. The added letter to the rgb and hsl stands for alpha which represents opacity.</p>
+            <ul>
+                <li>Keyword: The only option for opacity is transparent, making the element completely clear.</li>
+                <li>RGB: The syntax is changed to rgba and a fourth digit is added which is a digit between 0.0 to 1. with 0 being transparent and 1 being completely opaque.</li>
+                <li>Hexadecimal: Depending if the there are 6 digits or 3 digits, an additional 2 or 1 more set of hexadecimal characters are added to the end with 77 / 7 being half transparent.</li>
+                <li>HSL: Similar to RGB the syntax is changed to include an "a" to the end and a fourth digit is added with the same parameters as rgb.</li>
+            </ul>
+        </dev>
+   </main>
+</body>
+</html>

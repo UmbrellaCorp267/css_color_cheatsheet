@@ -1,0 +1,31 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: linear-gradient(to right, red , blue);
+}
+
+h3 { 
+    color: black;
+    font-weight: bold;
+}
+
+.example {
+    display: block;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.title {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 50px;
+    text-decoration: underline;
+    font-weight: bold;
+}
